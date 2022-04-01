@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: steelblue;
+  color: white;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.form {
+  padding: 20px 40px;
+  border-radius: 5px;
+
+  background-color: rgba(0, 0, 0, 0.4);
+}
+form > * {
+  margin: 20px 0 40px;
+}
+input,
+.btn {
+  width: 100%;
+  padding: 0.8rem 1px;
+}
+input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  color: white;
+}
+.form__input {
+  position: relative;
+}
+label {
+  position: absolute;
+  display: flex;
+  bottom: 5px;
+  left: 0px;
+  pointer-events: none;
+}
+label > span {
+  transition-timing-function: ease-in-out;
+  transition-delay: 500ms;
+  opacity: 0.8;
+}
+.normal {
+  transform: translateY(0);
+}
+.transitionInput {
+  transform: translateY(-26px);
+}
+span button {
+  background-color: transparent;
+  color: rgb(13, 17, 209);
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+}
